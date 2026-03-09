@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 1️⃣ PAGE TITLE (browser tab) -->
+  <title>Business Advisory & Brokerage Services | CertaServe Partners</title>
+  <meta name="description" content="Business advisory and brokerage support services including sell-side support, buy-side advisory, due diligence, valuation, business planning, and strategic advisory." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER (same on all pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CertaServe<span> Partners</span></span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+
+        <!-- 3️⃣ ACTIVE MENU ITEM -->
+        <a href="about.html" class="active">About</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button">Services ▾</button>
+          <div class="dropdown-content">
+            <div class="dropdown-title">Business Advisory & Brokerage</div>
+            <a href="services-advisory.html">Advisory & Brokerage Hub</a>
+            <a href="sell-business.html">Sell a Business</a>
+            <a href="buy-business.html">Buy a Business</a>
+            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+            <a href="business-plans-suv.html">Business Plans (SUV)</a>
+            <a href="strategic-advisory.html">Strategic Advisory</a>
+
+            <div class="dropdown-divider"></div>
+
+            <div class="dropdown-title">Legal Support Services</div>
+            <a href="process-serving.html">Process Serving</a>
+            <a href="court-filing.html">Court Filing</a>
+            <a href="legal-courier.html">Legal Courier</a>
+            <a href="document-management.html">Document Management</a>
+            <a href="e-discovery.html">E-Discovery Support</a>
+            <a href="commissioner-oaths.html">Commissioner of Oaths</a>
+          </div>
+        </div>
+
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Request Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <!-- 2️⃣ PAGE HEADING -->
+      <h1>About CertaServe Partners</h1>
+
+      <p class="muted">
+        CertaServe Partners is an Ottawa-based, CPA-led firm providing
+        business advisory, business brokerage, and professional legal
+        support services.
+      </p>
+
+      <p>
+        We support entrepreneurs, investors, law firms, and organizations
+        with transaction-focused services including due diligence,
+        valuation, business planning (including the Canadian Start-Up Visa
+        program), and reliable legal support operations.
+      </p>
+
+      <p>
+        Our approach combines financial clarity, structured execution, and
+        compliance-minded service delivery—ensuring every engagement is
+        handled with professionalism, confidentiality, and accountability.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (same on all pages) -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="pricing.html">Pricing</a>
+        <span>•</span>
+        <a href="contact.html">Contact</a>
+        <span>•</span>
+        <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Request Advisory or Legal Support Services</title>
+  <meta name="description" content="Contact CertaServe Partners to request business advisory, brokerage support, or legal support services. Secure intake form available." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CertaServe<span> Partners</span></span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button">Services ▾</button>
+          <div class="dropdown-content">
+            <div class="dropdown-title">Business Advisory & Brokerage</div>
+            <a href="services-advisory.html">Advisory & Brokerage Hub</a>
+            <a href="sell-business.html">Sell a Business</a>
+            <a href="buy-business.html">Buy a Business</a>
+            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+            <a href="business-plans-suv.html">Business Plans (SUV)</a>
+            <a href="strategic-advisory.html">Strategic Advisory</a>
+
+            <div class="dropdown-divider"></div>
+
+            <div class="dropdown-title">Legal Support Services</div>
+            <a href="process-serving.html">Process Serving</a>
+            <a href="court-filing.html">Court Filing</a>
+            <a href="legal-courier.html">Legal Courier</a>
+            <a href="document-management.html">Document Management</a>
+            <a href="e-discovery.html">E-Discovery Support</a>
+            <a href="commissioner-oaths.html">Commissioner of Oaths</a>
+          </div>
+        </div>
+
+        <a href="pricing.html">Pricing</a>
+
+        <!-- ACTIVE -->
+        <a href="contact.html" class="active">Contact</a>
+
+        <a href="contact.html" class="nav-cta">Request Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE CONTENT -->
+  <section class="section">
+    <div class="container">
+
+      <h1>Contact CertaServe Partners</h1>
+
+      <p class="muted">
+        Tell us what you need — business advisory/brokerage or legal support services.
+        We’ll respond with next steps.
+      </p>
+
+      <div class="grid-2" style="align-items:start; margin-top:2rem;">
+
+        <!-- LEFT: CONTACT FORM -->
+        <div class="card">
+          <h3>Service Request Form</h3>
+          <p class="muted">This form can work two ways: Formspree (recommended) or email fallback.</p>
+
+          <!-- ✅ OPTION A (Recommended): Formspree
+               1) Create a free form at formspree.io
+               2) Replace the action URL below with your Formspree endpoint
+               Example: https://formspree.io/f/abcdwxyz
+          -->
+          <form class="form" method="POST" action="https://formspree.io/f/xdkqjoqy>
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="text" placeholder="(xxx) xxx-xxxx" />
+
+            <label for="serviceType">Service Type</label>
+            <select id="serviceType" name="serviceType" required>
+              <option value="" selected disabled>Select one</option>
+              <optgroup label="Business Advisory & Brokerage">
+                <option>Sell a Business</option>
+                <option>Buy a Business</option>
+                <option>Due Diligence & Valuation</option>
+                <option>Business Plans (SUV)</option>
+                <option>Strategic Advisory</option>
+              </optgroup>
+              <optgroup label="Legal Support Services">
+                <option>Process Serving</option>
+                <option>Court Filing</option>
+                <option>Legal Courier</option>
+                <option>Document Management</option>
+                <option>E-Discovery Support</option>
+                <option>Commissioner of Oaths</option>
+              </optgroup>
+            </select>
+
+            <label for="urgency">Urgency</label>
+            <select id="urgency" name="urgency" required>
+              <option value="" selected disabled>Select one</option>
+              <option>Standard</option>
+              <option>Rush</option>
+              <option>Time-Specific</option>
+            </select>
+
+            <label for="details">Brief Details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Share brief details, timelines, and any constraints."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send Request</button>
+
+            <p class="fineprint">
+              If you haven’t set up Formspree yet, the submit button won’t send.
+              Use the email option to the right in the meantime.
+            </p>
+          </form>
+        </div>
+
+        <!-- RIGHT: DIRECT CONTACT + INSTRUCTIONS -->
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <p class="muted">Use this while you set up the form submission.</p>
+
+          <ul class="bullets">
+            <li><strong>Email:</strong> <a href="mailto:info@certaservepartners.com">info@certaservepartners.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a></li>
+            <li><strong>Service Area:</strong> Ottawa &amp; Ontario (Canada)</li>
+            <li><strong>Hours:</strong> By appointment (rush services available)</li>
+          </ul>
+
+          <h3 style="margin-top:1.5rem;">Commissioner of Oaths (Appointments)</h3>
+          <p class="muted">
+            Bring valid photo ID and ensure documents are unsigned until you are in front of the Commissioner.
+          </p>
+
+          <div style="margin-top:1.25rem;">
+            <a class="btn btn-outline" href="commissioner-oaths.html">View Commissioner Service</a>
+          </div>
+
+          <h3 style="margin-top:1.5rem;">Important Note</h3>
+          <p class="fineprint">
+            CertaServe Partners provides professional services support and legal support operations.
+            We do not provide legal advice. For legal advice, consult qualified legal counsel.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="pricing.html">Pricing</a>
+        <span>•</span>
+        <a href="contact.html">Contact</a>
+        <span>•</span>
+        <a href="#">Privacy Policy</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
