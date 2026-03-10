@@ -60,38 +60,27 @@
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
       </div>
+<nav class="main-nav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
 
-      <nav class="main-nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
+  <div class="dropdown">
+    <button class="dropbtn" type="button">Advisory Services ▾</button>
 
-        <div class="dropdown">
-          <button class="dropbtn" type="button">Services ▾</button>
-          <div class="dropdown-content">
-            <div class="dropdown-title">Business Advisory & Brokerage</div>
-            <a href="services-advisory.html">Advisory & Brokerage Hub</a>
-            <a href="sell-business.html">Sell a Business</a>
-            <a href="buy-business.html">Buy a Business</a>
-            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
-            <a href="business-plans-suv.html">Business Plans (SUV)</a>
-            <a href="strategic-advisory.html">Strategic Advisory</a>
+    <div class="dropdown-content">
+      <a href="services-advisory.html">Advisory Overview</a>
+      <a href="buy-business.html">Buy-Side Advisory</a>
+      <a href="sell-business.html">Sell-Side Advisory</a>
+      <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+      <a href="strategic-advisory.html">Strategic Advisory</a>
+    </div>
+  </div>
 
-            <div class="dropdown-divider"></div>
+  <a href="pricing.html">Engagement</a>
+  <a href="contact.html">Contact</a>
 
-            <div class="dropdown-title">Legal Support Services</div>
-            <a href="process-serving.html">Process Serving</a>
-            <a href="court-filing.html">Court Filing</a>
-            <a href="legal-courier.html">Legal Courier</a>
-            <a href="document-management.html">Document Management</a>
-            <a href="e-discovery.html">E-Discovery Support</a>
-            <a href="commissioner-oaths.html">Commissioner of Oaths</a>
-          </div>
-        </div>
-
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="nav-cta">Request Service</a>
-      </nav>
+  <a href="contact.html" class="nav-cta">Book Consultation</a>
+</nav>
     </div>
   </header>
 <!-- HERO SECTION -->
@@ -101,11 +90,11 @@
   <div class="hero-overlay"></div>
 
   <div class="container hero-content">
-    <h1>Business Advisory & Legal Support Services</h1>
+    <h1>Business Advisory & Transaction Support</h1>
 
     <p class="hero-subtitle">
-      CPA-led business advisory, brokerage support, and legal support services
-      for entrepreneurs and organizations across Ottawa and Ontario.
+      CPA-led advisory services helping entrepreneurs evaluate,
+      acquire, grow, and exit businesses with clarity and confidence.
     </p>
 
     <div class="hero-actions">
@@ -123,24 +112,35 @@
     <h2>Our Services</h2>
 
     <div class="cards">
-      <div class="card">
-        <h3>Business Advisory & Brokerage</h3>
-        <p>
-          Strategic advisory, buy-side and sell-side support, due diligence,
-          valuation guidance, and business planning.
-        </p>
-        <a href="services-advisory.html">Learn more →</a>
-      </div>
 
       <div class="card">
-        <h3>Legal Support Services</h3>
+        <h3>Buy-Side Advisory</h3>
         <p>
-          Professional process serving, court filing, document management,
-          legal courier services, and commissioner of oaths.
-        </p>
-        <a href="process-serving.html">Learn more →</a>
-      </div>
-    </div>
+          Support for entrepreneurs and investors evaluating acquisition
+          opportunities, risks, and strategic fit before purchasing a business.
+    </p>
+    <a href="buy-business.html">Learn more →</a>
+  </div>
+
+  <div class="card">
+    <h3>Sell-Side Advisory</h3>
+    <p>
+      Guidance for business owners preparing for exit, valuation discussions,
+      buyer questions, and deal readiness.
+    </p>
+    <a href="sell-business.html">Learn more →</a>
+  </div>
+
+  <div class="card">
+    <h3>Due Diligence & Valuation</h3>
+    <p>
+      Structured financial and operational analysis to support acquisition
+      decisions, investment reviews, and negotiation clarity.
+    </p>
+    <a href="due-diligence-valuation.html">Learn more →</a>
+  </div>
+
+</div>
 <!-- WHY CHOOSE US -->
 <section class="section why-choose-us">
   <div class="container">
@@ -270,3 +270,48 @@
   </div>
 </section>
 
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div class="footer-col">
+      <h3>CertaServe Partners</h3>
+      <p>
+        CPA-led business advisory firm helping entrepreneurs
+        evaluate, acquire, grow, and exit businesses with clarity
+        and confidence.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Advisory Services</h4>
+      <ul>
+        <li><a href="buy-business.html">Buy-Side Advisory</a></li>
+        <li><a href="sell-business.html">Sell-Side Advisory</a></li>
+        <li><a href="due-diligence-valuation.html">Due Diligence & Valuation</a></li>
+        <li><a href="strategic-advisory.html">Strategic Advisory</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Engagement</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
