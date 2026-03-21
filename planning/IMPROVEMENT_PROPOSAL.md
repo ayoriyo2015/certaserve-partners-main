@@ -33,6 +33,29 @@ The following issues are directly derived from [ .github/copilot-instructions.md
 9. Responsive behavior at the 900px breakpoint is not always verified.
 10. Contact and schema details can drift when values are updated only in one location.
 11. Contact form submission flow may fail to deliver inquiry emails when endpoint configuration is missing or invalid.
+12. Public-repository hosting exposes site source and assets more broadly than desired for business controls.
+
+---
+
+## Security and Hosting Remediation
+
+### Current Risk
+- The site is currently deployed via GitHub Pages with a public repository model.
+- This increases exposure of source files and downloadable assets beyond preferred business constraints.
+
+### Recommended Remediation
+1. Migrate the website source to a private repository.
+2. Use a deployment path that supports private-source publishing:
+	- GitHub Pages from a private repository (if plan/features permit), or
+	- GitHub Actions pipeline from private source to a hardened hosting target.
+3. Move sensitive or business-critical assets behind controlled delivery where feasible.
+4. Use environment-managed deployment credentials and least-privilege access.
+5. Add branch protection and required review for production deployment branches.
+
+### Expected Value
+- Better source and asset governance.
+- Reduced accidental exposure risk.
+- Stronger auditability and release control.
 
 ---
 
@@ -49,6 +72,7 @@ The following issues are directly derived from [ .github/copilot-instructions.md
 | Responsive QA and Release Checklist | 9 | Lowers mobile regressions and increases confidence before deploy | Copilot: 1-2 hrs (checklist generation and enforcement prompts) + Human: 2-3 hrs (manual viewport testing) |
 | Contact + Structured Data Sync Rule | 10 | Keeps critical business details consistent across visible content and schema | Copilot: 1-2 hrs (cross-file comparison support) + Human: 1-2 hrs (final approval of business details) |
 | Contact Form Email Delivery Enablement | 11 | Ensures each form submission triggers a real email notification to the designated inbox | Copilot: 1-2 hrs (endpoint/config validation support) + Human: 1-2 hrs (provider setup and inbox verification) |
+| Repository Privacy and Deployment Hardening | 12 | Improves security posture by restricting source access and enforcing controlled release flow | Copilot: 2-4 hrs (pipeline and config drafting support) + Human: 4-8 hrs (repo migration, hosting setup, access governance) |
 
 ---
 
@@ -75,6 +99,7 @@ The following issues are directly derived from [ .github/copilot-instructions.md
 - Apply responsive QA at and below 900px on all changed pages.
 - Adopt pre-deployment checklist discipline from [ .github/copilot-instructions.md ](.github/copilot-instructions.md).
 - Introduce recurring audit cadence for nav/footer/paths/schema.
+- Execute private-repository migration and hardened deployment workflow.
 
 **Result**: Repeatable quality control for future website updates.
 
@@ -94,6 +119,7 @@ Use this checklist before each release:
 8. Contact details match across footer and schema entries.
 9. Contact form test submission is received in designated inbox.
 10. Responsive checks pass at 900px and below.
+11. Production deployment runs from approved private-source workflow.
 
 ---
 
@@ -113,7 +139,8 @@ Use this checklist before each release:
 3. Run footer script and active-state verification pass.
 4. Run SEO and schema consistency pass.
 5. Validate contact form email delivery end-to-end.
-6. Execute responsive QA checklist and release sign-off.
+6. Complete private-repository migration and deployment hardening.
+7. Execute responsive QA checklist and release sign-off.
 
 ---
 
