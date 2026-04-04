@@ -4,15 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strategic Advisory | CertaServe Partners</title>
-  <meta name="description" content="CPA-led strategic advisory support for business owners, investors, and entrepreneurs. CertaServe Partners helps clients with financial modeling, performance analysis, scenario planning, and decision support." />
+  <meta name="description" content="CPA-led strategic advisory support for business owners, investors, and entrepreneurs. CertaServe Partners helps clients with financial modeling, performance analysis, growth planning, and decision support." />
   <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
@@ -23,8 +25,11 @@
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button">Advisory Services ▾</button>
-          <div class="dropdown-content">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
             <a href="services-advisory.html">Advisory Overview</a>
             <a href="buy-business.html">Buy-Side Advisory</a>
             <a href="sell-business.html">Sell-Side Advisory</a>
@@ -37,18 +42,20 @@
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
+  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero image-hero">
-    <img src="assets/images/strategic-advisory.jpg" alt="Strategic business planning and advisory discussion" class="hero-image">
+    <img src="assets/images/strategic-advisory.jpg" alt="Strategic business planning and financial advisory discussion" class="hero-image">
     <div class="hero-overlay light-overlay"></div>
 
     <div class="container hero-content">
       <h1>Strategic Advisory</h1>
       <p class="hero-subtitle">
         Practical, CPA-led support for decision-making, performance improvement,
-        scenario planning, and business growth.
+        growth planning, and long-term business strategy.
       </p>
 
       <div class="hero-actions">
@@ -58,6 +65,7 @@
     </div>
   </section>
 
+  <!-- ===== OVERVIEW ===== -->
   <section class="section">
     <div class="container">
       <div class="section-heading">
@@ -74,14 +82,14 @@
           <h3>Financial Modeling</h3>
           <p>
             Structured models and scenario analysis to support planning, investment,
-            financing, and decision-making.
+            financing, and strategic decision-making.
           </p>
         </div>
 
         <div class="feature-card">
           <h3>Performance Analysis</h3>
           <p>
-            Review of financial and operational performance to identify drivers,
+            Review of financial and operational performance to identify key drivers,
             weaknesses, and opportunities for improvement.
           </p>
         </div>
@@ -90,25 +98,26 @@
           <h3>Growth Planning</h3>
           <p>
             Support for expansion decisions, resource planning, and financial readiness
-            for the next stage of growth.
+            for the next stage of business growth.
           </p>
         </div>
 
         <div class="feature-card">
           <h3>Decision Support</h3>
           <p>
-            Clear analysis and practical recommendations to support high-impact strategic
-            and financial decisions.
+            Clear analysis and practical recommendations to support high-impact
+            financial and strategic decisions.
           </p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- ===== WHEN TO ENGAGE ===== -->
   <section class="section section-light">
     <div class="container">
       <div class="section-heading">
-        <span class="section-tag">When Clients Engage Us</span>
+        <span class="section-tag">When to Engage</span>
         <h2>Support at moments that matter</h2>
         <p>
           Strategic advisory is most valuable when the quality of a decision will shape
@@ -125,31 +134,74 @@
     </div>
   </section>
 
+  <!-- ===== APPROACH ===== -->
   <section class="section">
-    <div class="container image-text-section">
-      <div class="image-text-image">
-        <img src="assets/images/strategic-advisory.jpg" alt="Strategic planning discussion">
-      </div>
-
-      <div class="image-text-content">
+    <div class="container">
+      <div class="section-heading">
         <span class="section-tag">Our Approach</span>
         <h2>Understand, assess, advise, and support</h2>
         <p>
-          We begin by understanding your objectives, constraints, and operating context.
-          From there, we assess the financial drivers, assumptions, and risks that shape
-          the decision in front of you.
+          We take a structured approach that combines financial rigor with practical
+          business insight.
         </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Understand</h3>
+          <p>We begin by clarifying your objectives, constraints, and operating context.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Assess</h3>
+          <p>We analyze financial drivers, assumptions, risks, and performance indicators.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Advise</h3>
+          <p>We provide structured insights, options, and practical recommendations.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Support</h3>
+          <p>Where needed, we support implementation and follow-through on key decisions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY IT MATTERS ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Why It Matters</span>
+        <h2>Better insight leads to stronger outcomes</h2>
         <p>
-          The result is structured advice that is technically sound, commercially grounded,
-          and practical to implement.
+          Strategic decisions often involve uncertainty, trade-offs, and long-term impact.
+          Structured analysis and disciplined thinking help improve clarity, reduce risk,
+          and support better outcomes.
         </p>
+      </div>
+
+      <p>
+        Our role is to help clients move forward with confidence by providing clear,
+        financially grounded advice aligned with real business objectives.
+      </p>
+
+      <div style="margin-top: 2rem;">
         <a href="contact.html" class="btn btn-primary">Discuss Your Situation</a>
       </div>
     </div>
   </section>
 
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h3>CertaServe Partners</h3>
         <p>
@@ -177,6 +229,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -185,6 +238,19 @@
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
