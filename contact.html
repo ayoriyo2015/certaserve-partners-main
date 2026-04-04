@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Request Advisory or Legal Support Services</title>
-  <meta name="description" content="Contact CertaServe Partners to request business advisory, brokerage support, or legal support services. Secure intake form available." />
+  <title>Contact | CertaServe Partners</title>
+  <meta name="description" content="Contact CertaServe Partners to discuss advisory support for acquisitions, business sales, due diligence, valuation, and strategic decision-making." />
+  <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
@@ -23,137 +25,96 @@
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button">Services ▾</button>
-          <div class="dropdown-content">
-            <div class="dropdown-title">Business Advisory & Brokerage</div>
-            <a href="services-advisory.html">Advisory & Brokerage Hub</a>
-            <a href="sell-business.html">Sell a Business</a>
-            <a href="buy-business.html">Buy a Business</a>
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
+            <a href="services-advisory.html">Advisory Overview</a>
+            <a href="buy-business.html">Buy-Side Advisory</a>
+            <a href="sell-business.html">Sell-Side Advisory</a>
             <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
-            <a href="business-plans-suv.html">Business Plans (SUV)</a>
             <a href="strategic-advisory.html">Strategic Advisory</a>
-
-            <div class="dropdown-divider"></div>
-
-            <div class="dropdown-title">Legal Support Services</div>
-            <a href="process-serving.html">Process Serving</a>
-            <a href="court-filing.html">Court Filing</a>
-            <a href="legal-courier.html">Legal Courier</a>
-            <a href="document-management.html">Document Management</a>
-            <a href="e-discovery.html">E-Discovery Support</a>
-            <a href="commissioner-oaths.html">Commissioner of Oaths</a>
           </div>
         </div>
 
-        <a href="pricing.html">Pricing</a>
-
-        <!-- ACTIVE -->
+        <a href="pricing.html">Engagement</a>
         <a href="contact.html" class="active">Contact</a>
-
-        <a href="contact.html" class="nav-cta">Request Service</a>
+        <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
-  <!-- PAGE CONTENT -->
+  <!-- ===== HERO ===== -->
+  <section class="page-hero image-hero">
+    <img src="assets/images/services-hero.jpg" alt="Professional advisory consultation" class="hero-image">
+    <div class="hero-overlay light-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Contact</h1>
+      <p class="hero-subtitle">
+        Start a conversation about your situation. We’ll help you clarify next steps
+        and determine how we can support your objectives.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
   <section class="section">
     <div class="container">
 
-      <h1>Contact CertaServe Partners</h1>
+      <div class="section-heading">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Let’s discuss your needs</h2>
+        <p>
+          Whether you are evaluating an acquisition, preparing for a sale,
+          or navigating a strategic decision, we would be happy to speak with you.
+        </p>
+      </div>
 
-      <p class="muted">
-        Tell us what you need — business advisory/brokerage or legal support services.
-        We’ll respond with next steps.
-      </p>
+      <div class="contact-grid">
 
-      <div class="grid-2" style="align-items:start; margin-top:2rem;">
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
 
-        <!-- LEFT: CONTACT FORM -->
-        <div class="card">
-          <h3>Service Request Form</h3>
-          <p class="muted">This form can work two ways: Formspree (recommended) or email fallback.</p>
+          <p><strong>Email:</strong><br>
+          <a href="mailto:info@certaservepartners.ca">info@certaservepartners.ca</a></p>
 
-          <!-- ✅ OPTION A (Recommended): Formspree
-               1) Create a free form at formspree.io
-               2) Replace the action URL below with your Formspree endpoint
-               Example: https://formspree.io/f/abcdwxyz
-          -->
-          <form class="form" method="POST" action="https://formspree.io/f/xdkqjoqy>
-            <label for="fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text" placeholder="Your name" required />
+          <p><strong>Location:</strong><br>
+          Ottawa, Ontario, Canada</p>
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <p><strong>Availability:</strong><br>
+          By appointment only</p>
 
-            <label for="phone">Phone (optional)</label>
-            <input id="phone" name="phone" type="text" placeholder="(xxx) xxx-xxxx" />
-
-            <label for="serviceType">Service Type</label>
-            <select id="serviceType" name="serviceType" required>
-              <option value="" selected disabled>Select one</option>
-              <optgroup label="Business Advisory & Brokerage">
-                <option>Sell a Business</option>
-                <option>Buy a Business</option>
-                <option>Due Diligence & Valuation</option>
-                <option>Business Plans (SUV)</option>
-                <option>Strategic Advisory</option>
-              </optgroup>
-              <optgroup label="Legal Support Services">
-                <option>Process Serving</option>
-                <option>Court Filing</option>
-                <option>Legal Courier</option>
-                <option>Document Management</option>
-                <option>E-Discovery Support</option>
-                <option>Commissioner of Oaths</option>
-              </optgroup>
-            </select>
-
-            <label for="urgency">Urgency</label>
-            <select id="urgency" name="urgency" required>
-              <option value="" selected disabled>Select one</option>
-              <option>Standard</option>
-              <option>Rush</option>
-              <option>Time-Specific</option>
-            </select>
-
-            <label for="details">Brief Details</label>
-            <textarea id="details" name="details" rows="5" placeholder="Share brief details, timelines, and any constraints."></textarea>
-
-            <button class="btn btn-primary btn-block" type="submit">Send Request</button>
-
-            <p class="fineprint">
-              If you haven’t set up Formspree yet, the submit button won’t send.
-              Use the email option to the right in the meantime.
-            </p>
-          </form>
+          <p>
+            Initial consultations are intended to understand your situation,
+            discuss potential scope, and determine next steps.
+          </p>
         </div>
 
-        <!-- RIGHT: DIRECT CONTACT + INSTRUCTIONS -->
-        <div class="card">
-          <h3>Direct Contact</h3>
-          <p class="muted">Use this while you set up the form submission.</p>
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <h3>Request a Consultation</h3>
 
-          <ul class="bullets">
-            <li><strong>Email:</strong> <a href="mailto:info@certaservepartners.com">info@certaservepartners.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+1XXXXXXXXXX">+1 (XXX) XXX-XXXX</a></li>
-            <li><strong>Service Area:</strong> Ottawa &amp; Ontario (Canada)</li>
-            <li><strong>Hours:</strong> By appointment (rush services available)</li>
-          </ul>
+          <form action="#" method="post">
 
-          <h3 style="margin-top:1.5rem;">Commissioner of Oaths (Appointments)</h3>
-          <p class="muted">
-            Bring valid photo ID and ensure documents are unsigned until you are in front of the Commissioner.
-          </p>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
 
-          <div style="margin-top:1.25rem;">
-            <a class="btn btn-outline" href="commissioner-oaths.html">View Commissioner Service</a>
-          </div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
 
-          <h3 style="margin-top:1.5rem;">Important Note</h3>
-          <p class="fineprint">
-            CertaServe Partners provides professional services support and legal support operations.
-            We do not provide legal advice. For legal advice, consult qualified legal counsel.
-          </p>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+
+          </form>
         </div>
 
       </div>
@@ -161,24 +122,79 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- ===== CTA ===== -->
+  <section class="section contact-cta">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Next Step</span>
+        <h2>Schedule a discussion</h2>
+        <p>
+          We will respond promptly to discuss your objectives, clarify scope,
+          and outline how we can support your situation.
+        </p>
+      </div>
+
+      <a href="mailto:info@certaservepartners.ca" class="btn btn-primary">
+        Email Us Directly
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
+      <div class="footer-col">
+        <h3>CertaServe Partners</h3>
+        <p>
+          CPA-led business advisory firm supporting entrepreneurs, investors,
+          and owner-managed businesses through transactions, financial analysis,
+          and strategic decision-making.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Advisory Services</h4>
+        <ul>
+          <li><a href="buy-business.html">Buy-Side Advisory</a></li>
+          <li><a href="sell-business.html">Sell-Side Advisory</a></li>
+          <li><a href="due-diligence-valuation.html">Due Diligence & Valuation</a></li>
+          <li><a href="strategic-advisory.html">Strategic Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Engagement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
       <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
-      <p class="footer-links">
-        <a href="pricing.html">Pricing</a>
-        <span>•</span>
-        <a href="contact.html">Contact</a>
-        <span>•</span>
-        <a href="#">Privacy Policy</a>
-      </p>
     </div>
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
 </body>
 </html>
-<meta name="robots" content="index, follow" />
