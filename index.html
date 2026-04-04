@@ -4,47 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CertaServe Partners | CPA-Led Business Advisory & Transaction Support</title>
-  <meta name="description" content="CertaServe Partners is an Ottawa-based, CPA-led advisory firm supporting entrepreneurs, investors, and owner-managed businesses with buy-side advisory, sell-side advisory, due diligence, valuation support, and strategic business advisory." />
+  <meta name="description" content="CertaServe Partners is a CPA-led advisory firm supporting entrepreneurs, investors, and owner-managed businesses with acquisitions, exits, due diligence, valuation, and strategic advisory." />
   <meta name="robots" content="index, follow" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "CertaServe Partners",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Ottawa",
-      "addressRegion": "Ontario",
-      "addressCountry": "CA"
-    },
-    "url": "https://certaservepartners.ca",
-    "telephone": "+1-416-822-3991",
-    "areaServed": ["Ottawa", "Ontario", "Canada"]
-  }
-  </script>
 </head>
+
 <body>
 
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
       </div>
 
       <nav class="main-nav">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button">Advisory Services ▾</button>
-          <div class="dropdown-content">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
             <a href="services-advisory.html">Advisory Overview</a>
             <a href="buy-business.html">Buy-Side Advisory</a>
             <a href="sell-business.html">Sell-Side Advisory</a>
@@ -57,162 +42,219 @@
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
-  <<section class="hero">
-  <img src="assets/images/home-hero.jpg" alt="Professional business advisory meeting" class="hero-image">
-  <div class="hero-overlay"></div>
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img src="assets/images/home-hero.jpg" alt="Professional business advisory meeting" class="hero-image">
+    <div class="hero-overlay light-overlay"></div>
 
-  <div class="container hero-content">
-    <h1 class="hero-title">
-      <span class="brand-highlight">CertaServe Partners</span><br>
-      Strategic Financial Advisory for Growth, Transactions, and Value Creation
-    </h1>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        <span class="brand-highlight">CertaServe Partners</span>
+        Strategic Financial Advisory for Growth, Transactions, and Value Creation
+      </h1>
 
-    <p class="hero-subtitle">
-      CPA-led advisory support for entrepreneurs, investors, and owner-managed businesses
-      navigating acquisitions, exits, due diligence, valuation, and strategic decisions.
-    </p>
+      <p class="hero-subtitle">
+        CPA-led advisory support for entrepreneurs, investors, and owner-managed businesses
+        navigating acquisitions, exits, due diligence, valuation, and strategic decisions.
+      </p>
 
-    <div class="hero-actions">
-      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-      <a href="services-advisory.html" class="btn btn-outline">Explore Services</a>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+        <a href="services-advisory.html" class="btn btn-outline">Explore Services</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <section class="services section">
+  <!-- ===== SERVICES OVERVIEW ===== -->
+  <section class="section">
     <div class="container">
       <div class="section-heading">
-        <span class="section-tag">Our Services</span>
-        <h2>Focused advisory support for key business decisions</h2>
+        <span class="section-tag">What We Do</span>
+        <h2>Focused advisory support for critical business decisions</h2>
         <p>
-          We provide structured financial and strategic support across transactions,
-          growth decisions, and business planning.
+          We help clients evaluate opportunities, assess financial risk, structure decisions,
+          and move forward with clarity, discipline, and confidence.
         </p>
       </div>
 
       <div class="feature-grid">
         <div class="feature-card">
           <h3>Buy-Side Advisory</h3>
-          <p>Support for acquisitions, including opportunity assessment, financial review, valuation insight, and transaction structuring.</p>
+          <p>
+            Support for evaluating acquisition opportunities, including financial analysis,
+            risk assessment, valuation insight, and structured decision support before capital is committed.
+          </p>
         </div>
 
         <div class="feature-card">
           <h3>Sell-Side Advisory</h3>
-          <p>Exit readiness, financial positioning, and transaction support to help business owners prepare for and execute a successful sale.</p>
+          <p>
+            Preparation and support for business owners planning a sale or transition,
+            with a focus on readiness, positioning, and transaction execution.
+          </p>
         </div>
 
         <div class="feature-card">
           <h3>Due Diligence & Valuation</h3>
-          <p>Independent financial analysis to assess risks, validate assumptions, and support informed investment and transaction decisions.</p>
+          <p>
+            Independent financial review to identify risks, validate assumptions,
+            and support informed decisions in transactions, investments, and negotiations.
+          </p>
         </div>
 
         <div class="feature-card">
           <h3>Strategic Advisory</h3>
-          <p>Ongoing business and financial guidance to improve performance, structure growth, and support long-term value creation.</p>
+          <p>
+            Ongoing advisory support to improve performance, guide growth decisions,
+            and strengthen financial visibility and operational discipline.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section why-choose-us">
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section section-light">
     <div class="container">
       <div class="section-heading">
         <span class="section-tag">Why Choose Us</span>
-        <h2>Structured advisory for confident decisions</h2>
+        <h2>Structured advice for confident decisions</h2>
         <p>
-          We help business owners and investors make better decisions through
-          disciplined analysis, practical strategy, and execution-focused advice.
+          We bring financial discipline, practical analysis, and execution-focused support
+          to moments where the quality of a decision matters.
         </p>
       </div>
 
       <div class="feature-grid">
         <div class="feature-card">
-          <h3>CPA-led insight</h3>
-          <p>Advice grounded in strong financial analysis, commercial judgment, and real business context.</p>
+          <h3>CPA-Led Insight</h3>
+          <p>
+            Advice grounded in strong financial analysis, professional judgment,
+            and real business context.
+          </p>
         </div>
+
         <div class="feature-card">
-          <h3>Practical execution</h3>
-          <p>We focus on actionable recommendations, not theory or unnecessary complexity.</p>
+          <h3>Practical Execution</h3>
+          <p>
+            We focus on actionable recommendations and structured support,
+            not unnecessary complexity.
+          </p>
         </div>
+
         <div class="feature-card">
-          <h3>Confidential and trusted</h3>
-          <p>Sensitive matters involving acquisitions, exits, and strategic planning are handled with discretion.</p>
+          <h3>Confidential Engagement</h3>
+          <p>
+            Sensitive matters involving transactions, financial review,
+            and strategic decisions are handled with discretion.
+          </p>
         </div>
+
         <div class="feature-card">
-          <h3>Entrepreneur-focused</h3>
-          <p>We understand the realities and priorities of owner-managed businesses and investors.</p>
+          <h3>Entrepreneur-Focused</h3>
+          <p>
+            We understand the realities and priorities of owner-managed businesses
+            and investors making high-impact decisions.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="clients section">
-    <div class="container">
-      <div class="section-heading">
-        <span class="section-tag">Who We Serve</span>
-        <h2>Built for entrepreneurs, investors, and owner-managed businesses</h2>
+  <!-- ===== PROFESSIONAL BACKGROUND ===== -->
+  <section class="section">
+    <div class="container image-text-section">
+      <div class="image-text-image">
+        <img src="assets/images/about-hero.jpg" alt="Business strategy and financial advisory discussion">
+      </div>
+
+      <div class="image-text-content">
+        <span class="section-tag">Professional Background</span>
+        <h2>Built on deep financial, audit, and advisory experience</h2>
         <p>
-          We work with clients seeking structured financial insight and disciplined
-          execution across growth, acquisition, and transition decisions.
+          CertaServe Partners is led by a Chartered Professional Accountant with more than
+          20 years of experience spanning audit, finance, consulting, and structured financial review.
         </p>
+        <p>
+          That background supports a disciplined approach to risk assessment, financial analysis,
+          and strategic decision support across complex business situations.
+        </p>
+        <a href="about.html" class="btn btn-primary">Learn More</a>
       </div>
     </div>
   </section>
 
-  <section class="section advisory-process">
+  <!-- ===== HOW WE WORK ===== -->
+  <section class="section section-light">
     <div class="container">
       <div class="section-heading">
         <span class="section-tag">How We Work</span>
-        <h2>A clear path from conversation to action</h2>
+        <h2>A structured path from analysis to action</h2>
         <p>
-          Our process is designed to bring clarity, reduce risk, and support sound decision-making.
+          Our process is designed to bring clarity, reduce uncertainty, and support
+          disciplined decision-making.
         </p>
       </div>
 
       <div class="process-grid">
         <div class="process-step">
           <div class="step-number">01</div>
-          <h3>Initial Consultation</h3>
-          <p>We begin by understanding your objectives, business context, and immediate priorities.</p>
+          <h3>Understand</h3>
+          <p>We begin by clarifying your objectives, context, and key decision drivers.</p>
         </div>
+
         <div class="process-step">
           <div class="step-number">02</div>
-          <h3>Assessment</h3>
-          <p>We assess the opportunity, business position, financial considerations, and key risks.</p>
+          <h3>Assess</h3>
+          <p>We analyze financial performance, risks, assumptions, and strategic considerations.</p>
         </div>
+
         <div class="process-step">
           <div class="step-number">03</div>
-          <h3>Advice & Strategy</h3>
-          <p>We provide structured recommendations, financial insight, and practical next steps.</p>
+          <h3>Advise</h3>
+          <p>We deliver structured insights, practical recommendations, and clear next steps.</p>
         </div>
+
         <div class="process-step">
           <div class="step-number">04</div>
-          <h3>Execution Support</h3>
-          <p>Where needed, we support implementation, transaction planning, and follow-through.</p>
+          <h3>Support</h3>
+          <p>Where needed, we support execution, follow-through, and decision implementation.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact section">
+  <!-- ===== CTA ===== -->
+  <section class="section contact-cta">
     <div class="container">
-      <h2>Start a Conversation</h2>
-      <p>
-        Whether you are acquiring, exiting, or repositioning your business,
-        CertaServe Partners is ready to support your next move.
-      </p>
-      <a href="mailto:info@certaservepartners.ca" class="cta-button">Contact Us</a>
+      <div class="section-heading">
+        <span class="section-tag">Start a Conversation</span>
+        <h2>Discuss your next decision</h2>
+        <p>
+          Whether you are evaluating an acquisition, preparing for a sale, or addressing
+          a strategic challenge, CertaServe Partners can provide structured support.
+        </p>
+      </div>
+
+      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
     </div>
   </section>
 
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h3>CertaServe Partners</h3>
-        <p>CPA-led business advisory firm helping entrepreneurs evaluate, acquire, grow, and exit businesses with clarity and confidence.</p>
+        <p>
+          CPA-led business advisory firm supporting entrepreneurs, investors,
+          and owner-managed businesses through transactions, financial analysis,
+          and strategic decision-making.
+        </p>
       </div>
 
       <div class="footer-col">
@@ -233,6 +275,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -241,61 +284,21 @@
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
 </body>
 </html>
-<section class="section experience">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">Professional Background</span>
-      <h2>Built on deep financial, audit, and advisory experience</h2>
-      <p>
-        CertaServe Partners is led by a Chartered Professional Accountant with
-        extensive experience in audit, finance, and advisory across complex public
-        and private sector environments.
-      </p>
-    </div>
-
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Financial discipline</h3>
-        <p>
-          Strong grounding in financial analysis, risk assessment, and structured decision support.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Professional judgment</h3>
-        <p>
-          Experience developed through work involving complex financial issues, governance, and performance review.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Execution-focused advice</h3>
-        <p>
-          Practical support designed to help clients move from uncertainty to action with greater confidence.
-        </p>
-      </div>
-
-      <div class="feature-card">
-        <h3>Confidential engagement</h3>
-        <p>
-          Sensitive matters involving transactions, strategic decisions, and financial reviews are handled with discretion.
-        </p>
-      </div>
-    </div>
-  </div>
-<section class="section">
-  <div class="container">
-    <h2>Start a Conversation</h2>
-    <p>
-      If you are evaluating an opportunity, preparing for a transaction,
-      or facing a strategic decision, we can help you move forward with clarity.
-    </p>
-    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-  </div>
-</section>
-<meta name="robots" content="index, follow" />
