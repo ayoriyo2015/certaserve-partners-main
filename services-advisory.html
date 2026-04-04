@@ -1,131 +1,285 @@
-<section class="page-hero image-hero">
-  <img src="assets/images/services-hero.jpg" alt="Financial advisory strategy session" class="hero-image">
-  <div class="hero-overlay light-overlay"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advisory Services | CertaServe Partners</title>
+  <meta name="description" content="CertaServe Partners provides focused advisory support across acquisitions, exits, due diligence, valuation, and strategic business decisions for entrepreneurs, investors, and owner-managed businesses." />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <div class="container hero-content">
-    <h1>Advisory Services</h1>
-    <p>
-      CertaServe Partners provides disciplined financial and strategic advisory support
-      to entrepreneurs, investors, and owner-managed businesses across acquisitions,
-      exits, due diligence, valuation, and performance improvement.
-    </p>
-  </div>
-</section>
+<body>
 
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">What We Do</span>
-      <h2>Focused support for critical business decisions</h2>
-      <p>
-        We help clients evaluate opportunities, assess financial risk, structure decisions,
-        and move forward with clarity, discipline, and confidence.
+  <!-- ===== GLOBAL HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <div class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CertaServe<span> Partners</span></span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
+            <a href="services-advisory.html" class="active">Advisory Overview</a>
+            <a href="buy-business.html">Buy-Side Advisory</a>
+            <a href="sell-business.html">Sell-Side Advisory</a>
+            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+            <a href="strategic-advisory.html">Strategic Advisory</a>
+          </div>
+        </div>
+
+        <a href="pricing.html">Engagement</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Book Consultation</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero image-hero">
+    <img src="assets/images/services-hero.jpg" alt="Financial advisory strategy session" class="hero-image">
+    <div class="hero-overlay light-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Advisory Services</h1>
+      <p class="hero-subtitle">
+        Focused advisory support for entrepreneurs, investors, and owner-managed businesses
+        making important transaction, financial, and strategic decisions.
       </p>
     </div>
+  </section>
 
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Buy-Side Advisory</h3>
+  <!-- ===== OVERVIEW ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">What We Do</span>
+        <h2>Focused support for critical business decisions</h2>
         <p>
-          Support for evaluating acquisition opportunities, including financial analysis,
-          risk assessment, valuation insight, and structured decision support prior to investment.
+          We help clients evaluate opportunities, assess risk, structure decisions,
+          and move forward with greater clarity and confidence.
         </p>
       </div>
 
-      <div class="feature-card">
-        <h3>Sell-Side Advisory</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Buy-Side Advisory</h3>
+          <p>
+            Support for evaluating acquisition opportunities, including financial review,
+            opportunity assessment, valuation insight, and structured decision support.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Sell-Side Advisory</h3>
+          <p>
+            Preparation and support for business owners planning a sale or transition,
+            with a focus on readiness, positioning, and execution.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Due Diligence & Valuation</h3>
+          <p>
+            Independent financial analysis to identify risks, validate assumptions,
+            and support informed decisions in transactions, investments, and negotiations.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Strategic Advisory</h3>
+          <p>
+            Ongoing support to improve performance, guide growth decisions,
+            and strengthen financial visibility and operational discipline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHO WE SERVE ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Who We Serve</span>
+        <h2>Built for entrepreneurs, investors, and owner-managed businesses</h2>
         <p>
-          Preparation and support for business owners planning a sale or transition,
-          with a focus on financial readiness, positioning, and transaction execution.
+          Our services are designed for clients navigating transactions,
+          growth opportunities, performance challenges, and strategic change.
         </p>
       </div>
 
-      <div class="feature-card">
-        <h3>Due Diligence & Valuation</h3>
+      <ul class="bullets">
+        <li>Entrepreneurs evaluating acquisition opportunities</li>
+        <li>Business owners preparing for a sale or ownership transition</li>
+        <li>Investors assessing private company opportunities and risks</li>
+        <li>Owner-managed businesses seeking disciplined financial and strategic advice</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE ENGAGE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">How We Engage</span>
+        <h2>A practical and structured advisory process</h2>
         <p>
-          Independent financial review to identify risks, validate assumptions,
-          and support informed decisions in transactions, investments, and negotiations.
+          Our process is designed to bring clarity, reduce uncertainty,
+          and support disciplined decision-making.
         </p>
       </div>
 
-      <div class="feature-card">
-        <h3>Strategic Advisory</h3>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-number">01</div>
+          <h3>Understand</h3>
+          <p>We begin with your objective, business context, and key decision drivers.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">02</div>
+          <h3>Assess</h3>
+          <p>We review financial performance, risks, assumptions, and strategic considerations.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">03</div>
+          <h3>Advise</h3>
+          <p>We provide structured findings, practical recommendations, and clear next steps.</p>
+        </div>
+
+        <div class="process-step">
+          <div class="step-number">04</div>
+          <h3>Support</h3>
+          <p>Where needed, we continue to support implementation and decision follow-through.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE LINKS ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Explore Our Services</span>
+        <h2>Choose the advisory support that fits your situation</h2>
         <p>
-          Ongoing advisory support to improve performance, guide growth decisions,
-          and strengthen financial visibility and operational discipline.
+          Each engagement is tailored to the client’s objective, the complexity of the issue,
+          and the level of analysis required.
         </p>
       </div>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">Who We Serve</span>
-      <h2>Built for entrepreneurs, investors, and owner-managed businesses</h2>
-      <p>
-        Our services are designed for clients navigating important financial decisions,
-        transactions, or periods of growth and change.
-      </p>
-    </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Buy-Side Advisory</h3>
+          <p>Independent support for acquisition evaluation and transaction decisions.</p>
+          <a href="buy-business.html" class="btn btn-primary">Learn More</a>
+        </div>
 
-    <ul class="bullets">
-      <li>Entrepreneurs evaluating acquisition opportunities</li>
-      <li>Business owners preparing for a sale or ownership transition</li>
-      <li>Investors assessing private company opportunities and risks</li>
-      <li>Owner-managed businesses seeking structured financial insight and strategic support</li>
-    </ul>
-  </div>
-</section>
+        <div class="feature-card">
+          <h3>Sell-Side Advisory</h3>
+          <p>Support for business owners preparing for a sale or ownership transition.</p>
+          <a href="sell-business.html" class="btn btn-primary">Learn More</a>
+        </div>
 
-<section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">How We Work</span>
-      <h2>A structured approach from analysis to execution</h2>
-      <p>
-        Our process is designed to bring clarity, reduce uncertainty, and support
-        disciplined decision-making.
-      </p>
-    </div>
+        <div class="feature-card">
+          <h3>Due Diligence & Valuation</h3>
+          <p>Financial review and valuation support for informed negotiations and decisions.</p>
+          <a href="due-diligence-valuation.html" class="btn btn-primary">Learn More</a>
+        </div>
 
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="step-number">01</div>
-        <h3>Understand</h3>
-        <p>We begin by clarifying your objectives, context, and key decision drivers.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">02</div>
-        <h3>Assess</h3>
-        <p>We analyze financial performance, risks, assumptions, and strategic considerations.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">03</div>
-        <h3>Advise</h3>
-        <p>We deliver structured insights, practical recommendations, and clear next steps.</p>
-      </div>
-
-      <div class="process-step">
-        <div class="step-number">04</div>
-        <h3>Support</h3>
-        <p>Where required, we support execution, follow-through, and decision implementation.</p>
+        <div class="feature-card">
+          <h3>Strategic Advisory</h3>
+          <p>Practical support for performance improvement, growth planning, and decision-making.</p>
+          <a href="strategic-advisory.html" class="btn btn-primary">Learn More</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section contact-cta">
-  <div class="container">
-    <h2>Discuss your next decision</h2>
-    <p>
-      Whether you are evaluating an acquisition, preparing for a sale, or addressing
-      a strategic challenge, CertaServe Partners can provide structured support.
-    </p>
-    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-  </div>
-</section>
-<meta name="robots" content="index, follow" />
+  <!-- ===== CTA ===== -->
+  <section class="section contact-cta">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Start a Conversation</span>
+        <h2>Need advisory support?</h2>
+        <p>
+          Whether you are evaluating an acquisition, preparing for a sale,
+          or navigating a strategic decision, CertaServe Partners can help.
+        </p>
+      </div>
+
+      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== GLOBAL FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <h3>CertaServe Partners</h3>
+        <p>
+          CPA-led business advisory firm supporting entrepreneurs, investors,
+          and owner-managed businesses through transactions, financial analysis,
+          and strategic decision-making.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Advisory Services</h4>
+        <ul>
+          <li><a href="buy-business.html">Buy-Side Advisory</a></li>
+          <li><a href="sell-business.html">Sell-Side Advisory</a></li>
+          <li><a href="due-diligence-valuation.html">Due Diligence & Valuation</a></li>
+          <li><a href="strategic-advisory.html">Strategic Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Engagement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
