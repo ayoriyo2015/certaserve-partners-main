@@ -11,8 +11,10 @@
 
 <body>
 
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
@@ -23,8 +25,11 @@
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button">Advisory Services ▾</button>
-          <div class="dropdown-content">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
             <a href="services-advisory.html">Advisory Overview</a>
             <a href="buy-business.html">Buy-Side Advisory</a>
             <a href="sell-business.html" class="active">Sell-Side Advisory</a>
@@ -37,9 +42,11 @@
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
+  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero image-hero">
     <img src="assets/images/sell-side.jpg" alt="Business sale and transition planning meeting" class="hero-image">
     <div class="hero-overlay light-overlay"></div>
@@ -58,6 +65,7 @@
     </div>
   </section>
 
+  <!-- ===== OVERVIEW ===== -->
   <section class="section">
     <div class="container">
       <div class="section-heading">
@@ -105,13 +113,14 @@
     </div>
   </section>
 
+  <!-- ===== WHAT WE HELP YOU ACHIEVE ===== -->
   <section class="section section-light">
     <div class="container">
       <div class="section-heading">
         <span class="section-tag">What We Help You Achieve</span>
         <h2>Clarity, readiness, and confidence throughout the process</h2>
         <p>
-          A successful sale process requires more than interest from buyers. It requires
+          A successful sale process requires more than buyer interest. It requires
           strong preparation, disciplined information flow, and careful management of risk.
         </p>
       </div>
@@ -126,13 +135,10 @@
     </div>
   </section>
 
+  <!-- ===== WHY IT MATTERS ===== -->
   <section class="section">
-    <div class="container image-text-section">
-      <div class="image-text-image">
-        <img src="assets/images/sell-side.jpg" alt="Business sale planning session">
-      </div>
-
-      <div class="image-text-content">
+    <div class="container">
+      <div class="section-heading">
         <span class="section-tag">Why It Matters</span>
         <h2>Better preparation supports a better outcome</h2>
         <p>
@@ -140,17 +146,24 @@
           Strong preparation helps improve buyer confidence, reduce delays, and support a more
           controlled transaction process.
         </p>
-        <p>
-          We support clients in managing information release carefully and appropriately,
-          based on the stage of the transaction and the seriousness of the interested party.
-        </p>
+      </div>
+
+      <p>
+        We support clients in managing information release carefully and appropriately,
+        based on the stage of the transaction and the seriousness of the interested party.
+        Our goal is to help clients navigate the process with greater clarity, structure, and confidence.
+      </p>
+
+      <div style="margin-top: 2rem;">
         <a href="contact.html" class="btn btn-primary">Start the Conversation</a>
       </div>
     </div>
   </section>
 
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h3>CertaServe Partners</h3>
         <p>
@@ -178,6 +191,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -186,6 +200,19 @@
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
