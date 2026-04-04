@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Due Diligence & Valuation | CertaServe Partners</title>
-
-  <meta name="description" content="Independent due diligence and valuation support for entrepreneurs, investors, and owner-managed businesses. CertaServe Partners helps clients assess risk, validate assumptions, and support informed transaction decisions." />
-
+  <meta name="description" content="Independent due diligence and valuation support to identify risks, validate assumptions, and support informed transaction and investment decisions." />
+  <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
@@ -25,8 +25,11 @@
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button">Advisory Services ▾</button>
-          <div class="dropdown-content">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
             <a href="services-advisory.html">Advisory Overview</a>
             <a href="buy-business.html">Buy-Side Advisory</a>
             <a href="sell-business.html">Sell-Side Advisory</a>
@@ -39,73 +42,127 @@
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
-  <section class="section">
-    <div class="container">
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero image-hero">
+    <img src="assets/images/due-diligence.jpg" alt="Financial due diligence and valuation analysis" class="hero-image">
+    <div class="hero-overlay light-overlay"></div>
 
+    <div class="container hero-content">
       <h1>Due Diligence & Valuation</h1>
-
-      <p class="muted">
-        Independent financial analysis to help buyers, investors, and business owners
-        assess risk, validate assumptions, and make better-informed decisions.
+      <p class="hero-subtitle">
+        Independent financial analysis to identify risks, validate assumptions,
+        and support informed decisions in transactions, investments, and negotiations.
       </p>
 
-      <p>
-        CertaServe Partners provides disciplined due diligence and valuation support
-        for transactions, investments, and strategic reviews. We help clients go beyond
-        surface-level information by identifying key financial issues, testing assumptions,
-        and highlighting the factors that matter most to value and decision quality.
-      </p>
-
-      <h3>What We Support</h3>
-      <ul class="bullets">
-        <li>Financial due diligence support</li>
-        <li>Earnings and cash flow analysis</li>
-        <li>Working capital and balance sheet review</li>
-        <li>Identification of financial risks and red flags</li>
-        <li>Valuation support and pricing considerations</li>
-        <li>Scenario analysis and decision support</li>
-      </ul>
-
-      <h3>When This Is Valuable</h3>
-      <ul class="bullets">
-        <li>Before acquiring a business or investing capital</li>
-        <li>When testing whether historical performance supports the asking price</li>
-        <li>When assessing downside risks, hidden issues, or weak assumptions</li>
-        <li>When preparing for negotiation, financing, or internal approval</li>
-      </ul>
-
-      <h3>Our Approach</h3>
-      <ul class="bullets">
-        <li><strong>Review:</strong> understand the transaction, opportunity, and available financial information</li>
-        <li><strong>Assess:</strong> analyze earnings quality, cash flow, balance sheet items, and key assumptions</li>
-        <li><strong>Identify:</strong> highlight risks, inconsistencies, and areas requiring clarification</li>
-        <li><strong>Support:</strong> provide structured insight to strengthen negotiation and decision-making</li>
-      </ul>
-
-      <h3>Why It Matters</h3>
-      <p>
-        A transaction can look attractive at first glance while still carrying meaningful
-        financial and operational risk. Proper diligence and valuation support help reduce
-        uncertainty, improve pricing judgment, and strengthen confidence before capital is committed.
-      </p>
-
-      <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
+      <div class="hero-actions">
         <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
         <a href="pricing.html" class="btn btn-outline">Engagement & Fees</a>
       </div>
-
-      <p class="fineprint" style="margin-top:1rem;">
-        Advisory support is tailored to the scope, complexity, and stage of each engagement.
-      </p>
-
     </div>
   </section>
 
+  <!-- ===== OVERVIEW ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Financial Review</span>
+        <h2>Independent analysis where accuracy matters most</h2>
+        <p>
+          We provide structured financial review and valuation support to help clients
+          understand performance, identify risks, and make decisions with greater confidence.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Financial Due Diligence</h3>
+          <p>
+            Review of historical performance, earnings quality, revenue consistency,
+            and key financial drivers relevant to a transaction or investment decision.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Risk Identification</h3>
+          <p>
+            Identification of financial, operational, and structural risks that could
+            impact valuation, pricing, or post-transaction performance.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Valuation Support</h3>
+          <p>
+            Guidance on valuation approaches, assumptions, and pricing considerations
+            based on financial analysis and market context.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Scenario Analysis</h3>
+          <p>
+            Assessment of different outcomes based on key assumptions to support
+            negotiation, planning, and decision-making.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHEN TO ENGAGE ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">When to Engage</span>
+        <h2>Support at critical points in a transaction or decision</h2>
+        <p>
+          Due diligence and valuation support is most valuable when decisions involve
+          capital, risk, and long-term impact.
+        </p>
+      </div>
+
+      <ul class="bullets">
+        <li>Before acquiring or investing in a business</li>
+        <li>When validating financial performance presented by a seller</li>
+        <li>When assessing valuation and pricing assumptions</li>
+        <li>During negotiations where financial clarity is required</li>
+        <li>When preparing for financing or investor discussions</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== WHY IT MATTERS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Why It Matters</span>
+        <h2>Better insight reduces risk and improves outcomes</h2>
+        <p>
+          Transactions and investments involve uncertainty. Structured financial analysis
+          helps reduce that uncertainty by clarifying what is known, what is assumed,
+          and where risks may exist.
+        </p>
+      </div>
+
+      <p>
+        Our role is to bring independent perspective and disciplined analysis to support
+        better decisions, stronger negotiation positions, and more informed outcomes.
+      </p>
+
+      <div style="margin-top: 2rem;">
+        <a href="contact.html" class="btn btn-primary">Discuss Your Situation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h3>CertaServe Partners</h3>
         <p>
@@ -133,6 +190,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -141,9 +199,21 @@
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
 </body>
 </html>
-<meta name="robots" content="index, follow" />
