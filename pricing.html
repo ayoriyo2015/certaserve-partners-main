@@ -4,118 +4,237 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engagement & Fees | CertaServe Partners</title>
-  <meta name="description" content="Indicative fees for advisory services including due diligence, valuation, business planning, and strategic advisory provided by CertaServe Partners." />
+  <meta name="description" content="Transparent engagement structure for advisory services including buy-side, sell-side, due diligence, valuation, and strategic advisory support." />
+  <meta name="robots" content="index, follow" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="logo">
-      <span class="logo-mark">C</span>
-      <span class="logo-text">CertaServe<span> Partners</span></span>
-    </div>
+  <!-- ===== GLOBAL HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
 
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <div class="logo">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">CertaServe<span> Partners</span></span>
+      </div>
 
-      <div class="dropdown">
-        <button class="dropbtn">Advisory Services ▾</button>
-        <div class="dropdown-content">
-          <a href="services-advisory.html">Advisory Overview</a>
-          <a href="buy-business.html">Buy-Side Advisory</a>
-          <a href="sell-business.html">Sell-Side Advisory</a>
-          <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
-          <a href="strategic-advisory.html">Strategic Advisory</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown">
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
+            <a href="services-advisory.html">Advisory Overview</a>
+            <a href="buy-business.html">Buy-Side Advisory</a>
+            <a href="sell-business.html">Sell-Side Advisory</a>
+            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+            <a href="strategic-advisory.html">Strategic Advisory</a>
+          </div>
         </div>
-      </div>
 
-      <a href="pricing.html" class="active">Engagement</a>
-      <a href="contact.html">Contact</a>
-      <a href="contact.html" class="nav-cta">Book Consultation</a>
-    </nav>
-  </div>
-</header>
-
-<section class="section">
-  <div class="container">
-
-    <h1>Engagement & Fees</h1>
-
-    <p class="muted">
-      The following reflects typical engagement ranges. Final fees are determined
-      based on scope, complexity, timelines, and level of analysis required.
-    </p>
-
-    <div class="grid-2" style="margin-top:2rem;">
-
-      <div class="card">
-        <h3>Advisory Services</h3>
-
-        <ul class="bullets">
-          <li><strong>Initial Consultation:</strong> Complimentary (30 minutes)</li>
-          <li><strong>Business Plan (Standard):</strong> From $2,500</li>
-          <li><strong>Business Plan (Start-Up Visa):</strong> From $5,000</li>
-          <li><strong>Valuation & Pricing Analysis:</strong> From $3,500</li>
-          <li><strong>Due Diligence Support:</strong> $175 / hour or fixed-fee</li>
-          <li><strong>Sell-Side Readiness:</strong> From $4,500</li>
-          <li><strong>Strategic Advisory:</strong> $175 / hour</li>
-        </ul>
-
-      </div>
-
-      <div class="card">
-        <h3>Transaction & Engagement Structure</h3>
-
-        <p class="muted">
-          Engagements are structured based on the nature of the work and client objectives.
-        </p>
-
-        <ul class="bullets">
-          <li>Fixed-fee engagements for defined scopes</li>
-          <li>Hourly advisory for flexible or ongoing support</li>
-          <li>Project-based pricing for strategic initiatives</li>
-          <li>Transaction support may include a success-based component</li>
-        </ul>
-
-        <p class="fineprint" style="margin-top:1rem;">
-          All engagements are scoped individually to reflect the complexity and
-          level of professional input required.
-        </p>
-
-      </div>
+        <a href="pricing.html" class="active">Engagement</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-cta">Book Consultation</a>
+      </nav>
 
     </div>
+  </header>
 
-    <div class="card" style="margin-top:2rem;">
-      <h3>Request a Consultation</h3>
-      <p class="muted">
-        To discuss your situation and receive a tailored engagement proposal,
-        please reach out with a brief overview of your objectives.
+  <!-- ===== HERO ===== -->
+  <section class="page-hero image-hero">
+    <img src="assets/images/services-hero.jpg" alt="Professional advisory engagement discussion" class="hero-image">
+    <div class="hero-overlay light-overlay"></div>
+
+    <div class="container hero-content">
+      <h1>Engagement & Fees</h1>
+      <p class="hero-subtitle">
+        Clear, flexible engagement structures aligned with the scope, complexity,
+        and objectives of each advisory assignment.
       </p>
-      <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== INTRO ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Our Approach</span>
+        <h2>Transparent and tailored to your needs</h2>
+        <p>
+          Each engagement is structured based on the nature of the work, the level of analysis required,
+          and the complexity of the decision or transaction involved.
+        </p>
+      </div>
+
+      <p>
+        We prioritize clarity, fairness, and alignment with client objectives when determining fees.
+        Engagement terms are discussed upfront so expectations are clear from the outset.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PRICING MODELS ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Engagement Models</span>
+        <h2>Flexible structures depending on the assignment</h2>
+      </div>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <h3>Project-Based Engagement</h3>
+          <p>
+            Fixed or scoped pricing for defined advisory work such as due diligence,
+            valuation support, financial modeling, or transaction preparation.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Advisory Retainer</h3>
+          <p>
+            Ongoing support for business owners and investors requiring regular access
+            to financial insight, strategic input, and decision support.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Transaction Support</h3>
+          <p>
+            Engagements structured around key transaction stages, including preparation,
+            review, and execution support.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <h3>Custom Engagement</h3>
+          <p>
+            Tailored arrangements for complex or multi-phase assignments where flexibility
+            and adaptability are required.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHAT INFLUENCES FEES ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">What Influences Fees</span>
+        <h2>Factors considered in structuring engagements</h2>
+      </div>
+
+      <ul class="bullets">
+        <li>Scope and complexity of the assignment</li>
+        <li>Depth of financial analysis required</li>
+        <li>Timeline and urgency</li>
+        <li>Level of involvement across transaction stages</li>
+        <li>Coordination with other advisors (legal, tax, financing)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EXPECTATION SETTING ===== -->
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">What to Expect</span>
+        <h2>A structured and transparent process</h2>
+        <p>
+          We aim to ensure that every engagement begins with a clear understanding of objectives,
+          scope, and expected outcomes.
+        </p>
+      </div>
+
+      <ul class="bullets">
+        <li>Initial discussion to understand your situation and objectives</li>
+        <li>Clear definition of scope and deliverables</li>
+        <li>Transparent fee structure agreed upfront</li>
+        <li>Regular communication throughout the engagement</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="section contact-cta">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Next Step</span>
+        <h2>Discuss your requirements</h2>
+        <p>
+          If you are considering an engagement or would like clarity on how work would be structured,
+          we would be happy to discuss your situation.
+        </p>
+      </div>
+
+      <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+    </div>
+  </section>
+
+  <!-- ===== GLOBAL FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <div class="footer-col">
+        <h3>CertaServe Partners</h3>
+        <p>
+          CPA-led business advisory firm supporting entrepreneurs, investors,
+          and owner-managed businesses through transactions, financial analysis,
+          and strategic decision-making.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Advisory Services</h4>
+        <ul>
+          <li><a href="buy-business.html">Buy-Side Advisory</a></li>
+          <li><a href="sell-business.html">Sell-Side Advisory</a></li>
+          <li><a href="due-diligence-valuation.html">Due Diligence & Valuation</a></li>
+          <li><a href="strategic-advisory.html">Strategic Advisory</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Engagement</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
 
-  </div>
-</section>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
+    </div>
+  </footer>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
-    <p class="footer-links">
-      <a href="pricing.html">Engagement</a>
-      <span>•</span>
-      <a href="contact.html">Contact</a>
-    </p>
-  </div>
-</footer>
+  <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
-<meta name="robots" content="index, follow" />
