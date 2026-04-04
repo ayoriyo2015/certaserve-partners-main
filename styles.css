@@ -353,4 +353,32 @@ p {
   .header-inner {
     flex-direction: column;
   }
+}/* =========================
+   HERO BRAND EMPHASIS
+========================= */
+
+.hero-title {
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.brand-highlight {
+  display: block;
+  font-size: clamp(3.2rem, 6vw, 4.8rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+/* subtle emphasis line under brand */
+.brand-highlight::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #2563eb, #0f4c81);
+  margin-top: 10px;
+  border-radius: 2px;
 }
