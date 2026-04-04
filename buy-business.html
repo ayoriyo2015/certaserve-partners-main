@@ -11,8 +11,10 @@
 
 <body>
 
+  <!-- ===== GLOBAL HEADER ===== -->
   <header class="site-header">
     <div class="container header-inner">
+
       <div class="logo">
         <span class="logo-mark">C</span>
         <span class="logo-text">CertaServe<span> Partners</span></span>
@@ -23,24 +25,30 @@
         <a href="about.html">About</a>
 
         <div class="dropdown">
-  <button class="dropbtn" type="button" onclick="toggleDropdown()">Advisory Services ▾</button>
-  <div class="dropdown-content" id="advisoryDropdown">
-    <a href="services-advisory.html">Advisory Overview</a>
-    <a href="buy-business.html">Buy-Side Advisory</a>
-    <a href="sell-business.html">Sell-Side Advisory</a>
-    <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
-    <a href="strategic-advisory.html">Strategic Advisory</a>
-  </div>
-</div>
+          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+            Advisory Services ▾
+          </button>
+
+          <div class="dropdown-content" id="advisoryDropdown">
+            <a href="services-advisory.html">Advisory Overview</a>
+            <a href="buy-business.html" class="active">Buy-Side Advisory</a>
+            <a href="sell-business.html">Sell-Side Advisory</a>
+            <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
+            <a href="strategic-advisory.html">Strategic Advisory</a>
+          </div>
+        </div>
+
         <a href="pricing.html">Engagement</a>
         <a href="contact.html">Contact</a>
         <a href="contact.html" class="nav-cta">Book Consultation</a>
       </nav>
+
     </div>
   </header>
 
+  <!-- ===== PAGE HERO ===== -->
   <section class="page-hero image-hero">
-    <imgsrc="assets/images/buy-side.jpg" alt="Business acquisition strategy meeting" class="hero-image">
+    <img src="assets/images/buy-side.jpg" alt="Business acquisition strategy meeting" class="hero-image">
     <div class="hero-overlay light-overlay"></div>
 
     <div class="container hero-content">
@@ -57,6 +65,7 @@
     </div>
   </section>
 
+  <!-- ===== OVERVIEW ===== -->
   <section class="section">
     <div class="container">
       <div class="section-heading">
@@ -104,6 +113,7 @@
     </div>
   </section>
 
+  <!-- ===== WHO THIS IS FOR ===== -->
   <section class="section section-light">
     <div class="container">
       <div class="section-heading">
@@ -124,34 +134,37 @@
     </div>
   </section>
 
- <section class="section">
-  <div class="container">
-    <div class="section-heading">
-      <span class="section-tag">Why It Matters</span>
-      <h2>Better analysis leads to better decisions</h2>
+  <!-- ===== WHY IT MATTERS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-tag">Why It Matters</span>
+        <h2>Better analysis leads to better decisions</h2>
+        <p>
+          Acquisitions can create strong growth opportunities, but they also carry
+          meaningful financial and operational risk. A disciplined review process helps
+          improve decision quality, reduce surprises, and strengthen readiness before
+          capital is committed.
+        </p>
+      </div>
+
       <p>
-        Acquisitions can create strong growth opportunities, but they also carry
-        meaningful financial and operational risk. A disciplined review process helps
-        improve decision quality, reduce surprises, and strengthen readiness before
-        capital is committed.
+        We work alongside your legal, tax, and financing advisors to provide independent
+        financial insight and structured analysis throughout the evaluation process.
+        Our role is to help you understand the numbers, assumptions, and trade-offs
+        before you commit capital.
       </p>
+
+      <div style="margin-top: 2rem;">
+        <a href="contact.html" class="btn btn-primary">Discuss an Opportunity</a>
+      </div>
     </div>
+  </section>
 
-    <p>
-      We work alongside your legal, tax, and financing advisors to provide independent
-      financial insight and structured analysis throughout the evaluation process.
-      Our role is to help you understand the numbers, assumptions, and trade-offs
-      before you commit capital.
-    </p>
-
-    <div style="margin-top:2rem;">
-      <a href="contact.html" class="btn btn-primary">Discuss an Opportunity</a>
-    </div>
-  </div>
-</section>
-
+  <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
     <div class="container footer-inner">
+
       <div class="footer-col">
         <h3>CertaServe Partners</h3>
         <p>
@@ -179,6 +192,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
+
     </div>
 
     <div class="footer-bottom">
@@ -187,6 +201,19 @@
   </footer>
 
   <script>
+    function toggleDropdown() {
+      document.getElementById("advisoryDropdown").classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const dropdown = document.getElementById("advisoryDropdown");
+      const button = document.querySelector(".dropbtn");
+
+      if (!button.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove("show");
+      }
+    });
+
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
