@@ -541,4 +541,6 @@ p {
   .hero-actions {
     justify-content: center;
   }
+}.site-footer {
+  margin-top: 60px;
 }
