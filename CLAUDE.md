@@ -20,6 +20,8 @@ Live at https://certaservepartners.ca (see `CNAME`).
 - `styles.css`: all styling. Colours, shadows and radii are CSS variables on
   `:root`; reuse them rather than hard-coding values.
 - `assets/images/`: hero and section photos.
+- `thank-you.html`: Formspree redirect target after a contact form submission
+  (noindex, not in the sitemap).
 - `sitemap.xml`: keep in sync when pages are added, renamed or removed.
 - `CHECKLIST.md`, `PRD-certaserve-website.md`, `SITEMAP.md`,
   `portal-login.html`: currently empty placeholders.
