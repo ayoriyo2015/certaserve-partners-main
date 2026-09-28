@@ -28,10 +28,20 @@ Live at https://certaservepartners.ca (see `CNAME`).
 
 ## Conventions
 
-- Every page repeats the same header/nav (with the "Advisory Services"
-  dropdown) and footer, plus an inline `toggleDropdown()` script at the bottom.
-  There are no includes, so a nav or footer change must be made in every
-  `.html` file. Mark the current page's nav link with `class="active"`.
+- Every page repeats the same `<head>` font links (Google Fonts: Cormorant
+  Garamond for headings, Inter for body), header/nav (mobile `nav-toggle`
+  button plus the "Advisory Services" dropdown), footer, and an inline script
+  at the bottom (`toggleNav()`, `toggleDropdown()`, footer year). There are no
+  includes, so a change to any of these must be made in every `.html` file,
+  including `thank-you.html`. Page content sits inside `<main>`.
+- Mark the current page's nav link with `class="active" aria-current="page"`;
+  for advisory service pages, mark the dropdown item and add `active` to the
+  `.dropbtn` too.
+- Design: navy/ivory/gold "premium advisory" theme. Build sections from the
+  existing classes (`section`, `section-light`, `section-dark`,
+  `section-heading`, `feature-grid`/`feature-card`, `value-grid`,
+  `process-grid`, `bullets`, `cta-panel`, `btn-primary`/`btn-outline`/
+  `btn-dark`, `text-link`) and avoid inline styles.
 - Each page needs a unique `<title>` and `<meta name="description">`.
 - Use relative links between pages (`about.html`, not absolute URLs), except
   where an absolute URL is required (sitemap, Formspree redirect).

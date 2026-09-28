@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-CA">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Advisory Services | CertaServe Partners</title>
   <meta name="description" content="CertaServe Partners provides focused advisory support across acquisitions, exits, due diligence, valuation, and strategic business decisions for entrepreneurs, investors, and owner-managed businesses." />
   <meta name="robots" content="index, follow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -15,22 +18,26 @@
   <header class="site-header">
     <div class="container header-inner">
 
-      <div class="logo">
-        <span class="logo-mark">C</span>
-        <span class="logo-text">CertaServe<span> Partners</span></span>
-      </div>
+      <a href="index.html" class="logo" aria-label="CertaServe Partners home">
+        <span class="logo-mark">CS</span>
+        <span class="logo-text">CertaServe<span>Partners</span></span>
+      </a>
 
-      <nav class="main-nav">
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
 
         <div class="dropdown">
-          <button class="dropbtn" type="button" onclick="toggleDropdown()">
+          <button class="dropbtn active" type="button" aria-expanded="false" aria-controls="advisoryDropdown" onclick="toggleDropdown()">
             Advisory Services ▾
           </button>
 
           <div class="dropdown-content" id="advisoryDropdown">
-            <a href="services-advisory.html" class="active">Advisory Overview</a>
+            <a href="services-advisory.html" class="active" aria-current="page">Advisory Overview</a>
             <a href="buy-business.html">Buy-Side Advisory</a>
             <a href="sell-business.html">Sell-Side Advisory</a>
             <a href="due-diligence-valuation.html">Due Diligence & Valuation</a>
@@ -46,10 +53,12 @@
     </div>
   </header>
 
+  <main>
+
   <!-- ===== PAGE HERO ===== -->
   <section class="page-hero image-hero">
     <img src="assets/images/services-hero.jpg" alt="Financial advisory strategy session" class="hero-image">
-    <div class="hero-overlay light-overlay"></div>
+    <div class="hero-overlay"></div>
 
     <div class="container hero-content">
       <h1>Advisory Services</h1>
@@ -185,25 +194,25 @@
         <div class="feature-card">
           <h3>Buy-Side Advisory</h3>
           <p>Independent support for acquisition evaluation and transaction decisions.</p>
-          <a href="buy-business.html" class="btn btn-primary">Learn More</a>
+          <a href="buy-business.html" class="text-link">Buy-side advisory</a>
         </div>
 
         <div class="feature-card">
           <h3>Sell-Side Advisory</h3>
           <p>Support for business owners preparing for a sale or ownership transition.</p>
-          <a href="sell-business.html" class="btn btn-primary">Learn More</a>
+          <a href="sell-business.html" class="text-link">Sell-side advisory</a>
         </div>
 
         <div class="feature-card">
           <h3>Due Diligence & Valuation</h3>
           <p>Financial review and valuation support for informed negotiations and decisions.</p>
-          <a href="due-diligence-valuation.html" class="btn btn-primary">Learn More</a>
+          <a href="due-diligence-valuation.html" class="text-link">Due diligence & valuation</a>
         </div>
 
         <div class="feature-card">
           <h3>Strategic Advisory</h3>
           <p>Practical support for performance improvement, growth planning, and decision-making.</p>
-          <a href="strategic-advisory.html" class="btn btn-primary">Learn More</a>
+          <a href="strategic-advisory.html" class="text-link">Strategic advisory</a>
         </div>
       </div>
     </div>
@@ -212,18 +221,25 @@
   <!-- ===== CTA ===== -->
   <section class="section contact-cta">
     <div class="container">
-      <div class="section-heading">
-        <span class="section-tag">Start a Conversation</span>
-        <h2>Need advisory support?</h2>
-        <p>
-          Whether you are evaluating an acquisition, preparing for a sale,
-          or navigating a strategic decision, CertaServe Partners can help.
-        </p>
-      </div>
+        <div class="cta-panel">
+          <div>
+            <span class="section-tag">Start a Conversation</span>
+            <h2>Need advisory support?</h2>
+            <p>
+              Whether you are evaluating an acquisition, preparing for a sale,
+              or navigating a strategic decision, CertaServe Partners can help.
+            </p>
+          </div>
 
-      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-    </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+            <a href="mailto:info@certaservepartners.ca">info@certaservepartners.ca</a>
+          </div>
+        </div>
+      </div>
   </section>
+
+  </main>
 
   <!-- ===== GLOBAL FOOTER ===== -->
   <footer class="site-footer">
@@ -257,16 +273,32 @@
         </ul>
       </div>
 
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@certaservepartners.ca">info@certaservepartners.ca</a></li>
+          <li>Ottawa, Ontario, Canada</li>
+          <li>By appointment only</li>
+        </ul>
+      </div>
+
     </div>
 
-    <div class="footer-bottom">
+    <div class="container footer-bottom">
       <p>© <span id="year"></span> CertaServe Partners. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
+    function toggleNav() {
+      const nav = document.getElementById("mainNav");
+      const open = nav.classList.toggle("open");
+      document.querySelector(".nav-toggle").setAttribute("aria-expanded", open);
+    }
+
     function toggleDropdown() {
-      document.getElementById("advisoryDropdown").classList.toggle("show");
+      const open = document.getElementById("advisoryDropdown").classList.toggle("show");
+      document.querySelector(".dropbtn").setAttribute("aria-expanded", open);
     }
 
     window.addEventListener("click", function (e) {
@@ -275,6 +307,7 @@
 
       if (!button.contains(e.target) && !dropdown.contains(e.target)) {
         dropdown.classList.remove("show");
+        button.setAttribute("aria-expanded", "false");
       }
     });
 
